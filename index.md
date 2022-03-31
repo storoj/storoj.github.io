@@ -3,3 +3,4 @@
 * [Natural mouse scrolling direction in Windows](/windows-mouse-natural-scroll)
 * [Natural mouse scrolling direction in Linux](/linux-mouse-natural-scroll)
 * [SensibleSideButtons](/sensible-side-buttons)
+* [Allow Apps From Anywhere in Mac](/mac-allow-apps-from-anywhere)
