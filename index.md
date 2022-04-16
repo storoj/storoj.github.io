@@ -5,3 +5,4 @@
 * [SensibleSideButtons](/sensible-side-buttons)
 * [Allow Apps From Anywhere in Mac](/mac-allow-apps-from-anywhere)
 * [[boringssl] Failed to log metrics](/boringssl-logs)
+* [Life in the UK](/life-in-the-uk/)
