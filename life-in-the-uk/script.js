@@ -16,26 +16,27 @@ Array.prototype.shuffle = function() {
 function onAnswerChange(e) {
   var target = e.target;
   if (section = findParentTag(target, 'section')) {
-    section.querySelectorAll('li').forEach(function(e) {
-      e.classList.remove('incorrect');
-      e.classList.remove('correct');
-    });
-    
-    if (target.checked) {
-      var incorrect = target.value == '0';
-      findParentTag(target, 'li').classList.add(incorrect ? 'incorrect' : 'correct');
-      if (incorrect && (explanation = section.querySelector('p.explanation'))) {
-        explanation.style.display = 'block';
+    section.querySelectorAll('li').forEach(function(li) {
+      li.classList.remove('incorrect');
+      li.classList.remove('correct');
+
+      var input = li.querySelector('input');
+      if (input.checked) {
+        var incorrect = input.value == '0';
+        li.classList.add(incorrect ? 'incorrect' : 'correct');
+        if (incorrect && (explanation = section.querySelector('p.explanation'))) {
+          explanation.style.display = 'block';
+        }
       }
-    }
+    });
   }
 }
 
-function renderAnswer(answer, id) {
+function renderAnswer(answer, id, type) {
   var el = document.createElement('li');
 
   var input = document.createElement('input');
-  input.type = 'radio';
+  input.type = type;
   input.name = id;
   input.value = answer.correct ? '1' : '0';
   input.addEventListener('change', onAnswerChange);
@@ -50,6 +51,12 @@ function renderAnswer(answer, id) {
   return el;
 }
 
+function questionType(record) {
+  return record.answers.filter(function(answer) {
+    return answer.correct;
+  }).length > 1 ? 'checkbox' : 'radio';
+}
+
 function renderQuestion(record) {
   var section = document.createElement('section');
 
@@ -60,8 +67,10 @@ function renderQuestion(record) {
   var list = document.createElement('ul');
   section.appendChild(list);
 
+  var type = questionType(record);
+
   record.answers.shuffle().forEach(function(answer) {
-    list.appendChild(renderAnswer(answer, record.id));
+    list.appendChild(renderAnswer(answer, record.id, type));
   });
 
   if (record.explanation) {

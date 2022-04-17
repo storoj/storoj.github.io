@@ -38,3 +38,13 @@ li input {
   margin-top: 0;
   vertical-align: middle;
 }
+
+a {
+  color: #0366d6;
+}
+
+h4 {
+  font-weight: lighter;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 1em;
+}
