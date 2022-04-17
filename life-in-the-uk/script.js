@@ -98,3 +98,8 @@ function randomTest() {
 }
 
 randomTest()
+
+document.getElementById('restart').addEventListener('click', function(){
+  randomTest();
+  window.scrollTo(0, 0);
+});

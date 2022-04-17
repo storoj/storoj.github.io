@@ -48,3 +48,7 @@ h4 {
   border-bottom: 1px solid #eaecef;
   padding-bottom: 1em;
 }
+
+button#restart {
+  padding: 1em;
+}
