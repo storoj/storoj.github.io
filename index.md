@@ -1,3 +1,4 @@
+* [CV](/cv)
 * [Natural mouse scrolling direction in Windows](/windows-mouse-natural-scroll)
 * [Natural mouse scrolling direction in Linux](/linux-mouse-natural-scroll)
 * [SensibleSideButtons](/sensible-side-buttons)
