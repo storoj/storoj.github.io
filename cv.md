@@ -8,7 +8,7 @@ dark.storoj@gmail.com
 
 * Senior iOS Developer with 10+ years of experience.
 * Constant learner, sharpening my tools every day;
-* Share and recenve constructive feedback to take the team's results to the next level;
+* Share and receive constructive feedback to take the team's results to the next level;
 * Mentor newcomers to multiply the team's impact;
 * Cooperate with product owners to clarify the business needs;
 * Proactively improve development tools and processes to increase the team's productivity;
