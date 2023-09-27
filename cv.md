@@ -2,7 +2,7 @@
 
 ```
 London, UK
-+44 7500 814031
++44 7500 814931
 dark.storoj@gmail.com
 ```
 
