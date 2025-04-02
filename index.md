@@ -8,3 +8,4 @@
 * [Life in the UK – Official](/life-in-the-uk/)
 * [Life in the UK – Recommended](/life-in-the-uk/recommended.html)
 * [Disable Keyboard Layout Switching Popup in macos](/mac-disable-kb-layout-popup)
+* [Fix Monitor Flickering on Apple Silicon (Stillcolor)](https://github.com/aiaf/Stillcolor)
