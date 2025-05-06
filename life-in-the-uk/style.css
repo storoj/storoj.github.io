@@ -1,19 +1,11 @@
-@media only screen and (orientation: portrait) {
-  @media (max-device-width: 375px),
-  @media (max-device-width: 320px),
-  {
-    body {
-      -webkit-text-size-adjust: 250%;
-      zoom: 250%;
-    }
-  }
-}
-
 body {
   max-width: 800px;
-  padding: 2em;
+  width: 100%;              /* new */
+  padding: 2em 1em;         /* adjust horizontal padding */
   margin: 0 auto;
   font-family: sans-serif;
+  box-sizing: border-box;   /* optional but helpful */
+}
 }
 
 h3 {
@@ -62,8 +54,49 @@ h4 {
 
 button#restart {
   padding: 1em;
-  width: 80%;
-  height: 44px;
-  margin: 5em auto 2em auto;
-  display: block;
+
+/* Phones (<= 480px) */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 1em;
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  li {
+    margin: 0.75em 0;
+    font-size: 1rem;
+  }
+  button#restart {
+    width: 100%;
+    padding: 0.75em;
+    font-size: 1.1rem;
+  }
 }
+
+/* Tablets (<= 768px) */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 1.5em;
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  li {
+    margin: 0.9em 0;
+    font-size: 1.05rem;
+  }
+  button#restart {
+    width: 90%;
+    max-width: 350px;
+    padding: 0.9em;
+    font-size: 1.15rem;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
